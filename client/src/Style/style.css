@@ -1,0 +1,242 @@
+.navication{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+:root {
+    --primary-color: #008000; 
+    /* --primary-color:red; */
+    
+    --spacing: 8px; 
+  }
+
+.navication li{
+    margin: 0px 20px;
+}
+.navication li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* mobile biew */
+.mobilename{
+    list-style: none;
+
+}
+
+
+
+.styledPaper {
+    padding: 16px; /* theme.spacing(4) */
+    max-width: 400px;
+    margin: auto;
+    margin-top: 64px; /* theme.spacing(8) */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Proper box shadow */
+    border-radius: 4px; /* Adjust radius as needed */
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0; /* theme.palette.divider */
+  }
+
+  /* DrawerStyles.css */
+.drawer {
+  background-color: #f5f5f5; /* Light background color */
+  width: 250px; /* Width of the drawer */
+}
+
+/* order Table */
+.table-row:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+}
+
+.table-cell {
+  padding: 16px; /* Add more padding for cells */
+}
+
+
+.list-item {
+  padding: 16px; /* Padding for list items */
+  color: #333; /* Text color */
+  transition: background-color 0.3s; /* Smooth background transition */
+  margin-bottom: 7px;
+}
+
+.list-item:hover {
+  background-color: #e0e0e0; /* Hover effect */
+}
+
+.list-item-text {
+  font-size: 16px; /* Font size for text */
+  font-weight: 500; /* Font weight */
+}
+
+  
+
+
+.inputField {
+    margin-bottom: 16px; /* Assuming theme.spacing(2) is 16px */
+  }
+
+.sideHeader{
+    text-align: right;
+    /* padding: 10px; */
+    margin-right: 50px;
+  }
+
+.mobilename li{
+    margin-top: 20px;
+}
+.mobilename li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+
+/*about*/
+
+.aboutHeading{
+  justify-content: center;
+  display: flex;
+}
+
+.aboutHeading {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+.aboutText {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 16px; /* Adds space between paragraphs if using multiple Typography components */
+}
+
+.imageTag{
+
+  /* style={{ width: '100%', height: 'auto', borderRadius: '8px' }}  */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 600px;
+  /* margin-bottom: 100px; */
+}
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+/*contect*/
+
+.contectH1{
+  font-family: monospace;
+  color: #008000;
+  font-size: x-large
+}
+
+.contectptag{
+  font-weight: bold;
+  text-align: center;
+  margin-right: 300px;
+  
+}
+.contectptag2{
+  font-weight: bold;
+  text-align: center;
+  margin-right: 520px;
+}
+.contectptag3{
+  font-weight: bold;
+  text-align: center;
+  margin-right: 560px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* styles.css */
+.tree-container {
+  position: relative;
+  padding-left: 20px; /* Space for the connecting lines */
+}
+
+.tree-node {
+  position: relative;
+  margin: 20px 0; /* Space between nodes */
+  padding: 15px;
+  border: 2px solid #3f51b5; /* Border color */
+  border-radius: 5px;
+  background-color: #e3f2fd; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.tree-node::before {
+  content: '';
+  position: absolute;
+  left: -10px; /* Position the line to the left of the node */
+  top: 0; /* Start from the top of the node */
+  border-left: 2px solid #3f51b5; /* Line color */
+  height: 100%; /* Full height of the node */
+  z-index: -1; /* Ensure it's behind the node */
+}
+
+.tree-node:first-child::before {
+  display: none; /* Hide the line for the first node */
+}
+
+.tree-children {
+  display: flex;
+  justify-content: center; /* Center child nodes */
+  padding-left: 20px; /* Space for the vertical lines */
+}
+
+.tree-children > div {
+  margin: 0 20px; /* Space between sibling nodes */
+  position: relative; /* For connecting lines */
+}
+
+.tree-children > div::before {
+  content: '';
+  position: absolute;
+  left: 50%; /* Center the line */
+  top: -20px; /* Position the line above the child node */
+  border-top: 2px solid #3f51b5; /* Line color */
+  width: 100%; /* Full width */
+  height: 20px; /* Height of the line */
+  transform: translateX(-50%); /* Center the line */
+}
+
+.tree-children > div:first-child::before {
+  display: none; /* Hide the line for the first child */
+}
+
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid black; /* Color of the arrow */
+  margin-bottom: -5px; /* Adjust as necessary */
+}
+
+
+.connection-line {
+  position: relative;
+  margin: 0 auto;
+}
+
+.vertical-line {
+  width: 2px; /* Thickness of the line */
+  background-color: black; /* Color of the line */
+}
+
+.horizontal-line {
+  height: 2px; /* Thickness of the line */
+  background-color: black; /* Color of the line */
+  position: absolute;
+}
+
