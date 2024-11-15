@@ -12,7 +12,7 @@ api/public/user/*
 !api/public/user/.gitkeep
 
 # env files
-.env
+#.env
 .env.development
 .env.production
 

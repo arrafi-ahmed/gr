@@ -48,6 +48,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage});
 
+app.get('/api/version', (req, res) => {
+    return res.status(200).json({version: 1});
+});
+
 // User registration endpoint
 app.post('/api/add', (req, res) => {
     const {user_id, password, location, gmail, ph_no} = req.body;
