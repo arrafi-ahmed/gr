@@ -64,7 +64,10 @@ const Login = () => {
 
   const signInSubmit = async () => {
     try {
+      console.log(1, process.env.REACT_APP_API_BASE_URL)
+      console.log(2, process.env.NODE_ENV)
       const res = await axios.post(process.env.REACT_APP_API_BASE_URL + '/loginPage', { "userid": userid, "password": password });
+      console.log(3, res.config.url)
       console.log(res.data);
       console.log(res.data.usertype);
       
